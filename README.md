@@ -24,7 +24,7 @@ Yet Another Simple Translator
   - [Contact](#contact)
 
 ## Overview
-SimpleTranslator is a ASP.NET core MVC application designed to provide English to French translation using Google Translation API. This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
+SimpleTranslator is a ASP.NET core MVC application designed to provide English to French translation using [Google Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/metrics?hl=en&inv=1&invt=AbruXA&project=rival-translator). This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
 
 ## Getting Started
 

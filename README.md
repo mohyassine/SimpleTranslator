@@ -7,10 +7,15 @@ SimpleTranslator is a .NET application designed to provide translation services.
 ## Getting Started
 
 ### Prerequisites
-- .NET SDK installed on your machine
+- .NET Core installed on your machine
 - A code editor like Visual Studio or Visual Studio Code
 
 ### Required Packages and Tools
+- Google Cloud Service
+- Moq
+- xUnit
+- Coverlet
+- [ReportGeneratoor](https://github.com/danielpalme/ReportGenerator)
 
 ### Running the Project
 1. Clone the repository:
@@ -34,6 +39,10 @@ SimpleTranslator is a .NET application designed to provide translation services.
     dotnet run
     ```
 
+![alt text](https://github.com/user-attachments/assets/e4b92630-1651-44e4-a30b-a3b352d827d6)
+![alt text](https://github.com/user-attachments/assets/cfafff8e-314f-4883-bb88-7c0394b2c7c9)
+![alt text](https://github.com/user-attachments/assets/613d8333-cc3a-4b45-948a-74f354276ef0)
+
 ## Running Unit Tests
 1. Navigate to the test project directory:
     ```sh
@@ -43,6 +52,12 @@ SimpleTranslator is a .NET application designed to provide translation services.
     ```sh
     dotnet test
     ```
+3. To Run tests with coverage data collection:
+    ```sh
+    dotnet test --collect:"XPlat Code Coverage"
+    ```
+![alt text](https://github.com/user-attachments/assets/b717f249-0a34-4676-9e94-4e4a803c32fe)
+
 
 ## Models OOP Design
 The application implemenets essential OOP concepts and design principles. The main models include:

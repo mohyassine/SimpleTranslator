@@ -38,6 +38,16 @@ SimpleTranslator is a .NET application designed to provide translation services.
     ```sh
     dotnet run
     ```
+
+## Web App UI
+The app has a simple 2-pages UI - Home page and Translate page
+
+### Homepage
+![Homepage - UI](https://github.com/user-attachments/assets/613d8333-cc3a-4b45-948a-74f354276ef0)
+
+### Translation Page
+![Translation Page - UI](https://github.com/user-attachments/assets/cfb494b0-fd64-4452-a398-136362b7fb15)
+
 ## Running Unit Tests
 1. Navigate to the test project directory:
     ```sh
@@ -81,6 +91,9 @@ The application implemenets essential OOP concepts and design principles. The ma
 - Encapsulation:
 - Inheritence: 
 - Polymorphism:
+
+## Singlton Design Pattern
+The Translator Class follows the Singlton design pattern. This pattern was selected to ensure inilizing a single static translation object that will be reused for all web requests.
 
 
 ## Controllers Actions

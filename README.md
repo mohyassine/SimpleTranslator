@@ -2,23 +2,25 @@
 # SimpleTranslator
 Yet Another Simple Translator
 
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Required Packages and Tools](#required-packages-and-tools)
-  - [Running the Project](#running-the-project)
-- [Web App UI](#web-app-ui)
-  - [Homepage](#homepage)
-  - [Translation Page](#translation-page)
-- [Unit Tests and Coverage](#unit-tests-and-coverage)
-  - [Running Unit Tests](#running-unit-tests)
-  - [Generate The Coverage Rport](#generate-the-coverage-rport)
-  - [Coverage Report](#coverage-report)
-- [Models OOP Design](#models-oop-design)
-- [Singlton Design Pattern](#singlton-design-pattern)
-- [Controllers Actions](#controllers-actions)
-- [Features in Program.cs](#features-in-programcs)
-- [Contact](#contact)
+- [SimpleTranslator](#simpletranslator)
+  - [Overview](#overview)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Required Packages and Tools](#required-packages-and-tools)
+    - [Running the Project](#running-the-project)
+  - [Web App UI](#web-app-ui)
+    - [Homepage](#homepage)
+    - [Translation Page](#translation-page)
+  - [Unit Tests and Coverage](#unit-tests-and-coverage)
+    - [Running Unit Tests](#running-unit-tests)
+    - [Generate The Coverage Rport](#generate-the-coverage-rport)
+    - [Coverage Report](#coverage-report)
+  - [OOP Principles and Design Patterns](#oop-principles-and-design-patterns)
+    - [OOP Principles](#oop-principles)
+    - [OOP Design Pattern](#oop-design-pattern)
+  - [Controllers Actions](#controllers-actions)
+  - [Features in Program.cs](#features-in-programcs)
+  - [Contact](#contact)
 
 ## Overview
 SimpleTranslator is a .NET application designed to provide translation services. This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
@@ -107,15 +109,16 @@ The following screenshot show the coverage per Class:
 The following shows coverage details for Class *HomeController.cs*
 ![alt text](https://github.com/user-attachments/assets/613d8333-cc3a-4b45-948a-74f354276ef0)
 
-## Models OOP Design
+## OOP Principles and Design Patterns
+### OOP Principles
 The application implemenets essential OOP concepts and design principles. The main models include:
 - Abstraction:
 - Encapsulation:
 - Inheritence: 
 - Polymorphism:
 
-## Singlton Design Pattern
-The Translator Class follows the Singlton design pattern. This pattern was selected to ensure inilizing a single static translation object that will be reused for all web requests.
+### OOP Design Pattern
+The Translator Class follows the `Singlton` design pattern. This pattern was selected to ensure inilizing a single static translation object that will be reused for all web requests.
 
 
 ## Controllers Actions

@@ -43,7 +43,7 @@ SimpleTranslator is a .NET application designed to provide translation services.
 The app has a simple 2-pages UI - Home page and Translate page
 
 ### Homepage
-![Homepage - UI](https://github.com/user-attachments/assets/613d8333-cc3a-4b45-948a-74f354276ef0)
+![Homepage - UI](https://github.com/user-attachments/assets/2ac7d313-a5fb-419c-922e-b3cd84e6f866)
 
 ### Translation Page
 ![Translation Page - UI](https://github.com/user-attachments/assets/cfb494b0-fd64-4452-a398-136362b7fb15)

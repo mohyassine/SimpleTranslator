@@ -11,6 +11,7 @@ Yet Another Simple Translator
   - [Web App UI](#web-app-ui)
     - [Homepage](#homepage)
     - [Translation Page](#translation-page)
+  - [API Docs](#api-docs)
   - [Unit Tests and Coverage](#unit-tests-and-coverage)
     - [Running Unit Tests](#running-unit-tests)
     - [Generate The Coverage Rport](#generate-the-coverage-rport)
@@ -24,7 +25,6 @@ Yet Another Simple Translator
 
 ## Overview
 SimpleTranslator is a ASP.NET core MVC application designed to provide English to French translation using Google Translation API. This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
-
 
 ## Getting Started
 
@@ -69,6 +69,10 @@ The app has a simple 2-pages UI - Home page and Translate page
 
 ### Translation Page
 ![Translation Page - UI](https://github.com/user-attachments/assets/cfb494b0-fd64-4452-a398-136362b7fb15)
+
+## API Docs
+The project uses Swagger UI to generate API docs. After running the project, you can access them using the URL http://localhost:5239/swagger/index.html
+
 
 ## Unit Tests and Coverage
 The project includes several unit tests. I wrote the musing xUnit framwork. It also has a testing coverage report included. The following show how to run the unit tests and generate the coverage report.

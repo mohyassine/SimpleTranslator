@@ -1,26 +1,28 @@
-- [SimpleTranslator](#simpletranslator)
-  - [Overview](#overview)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Required Packages and Tools](#required-packages-and-tools)
-    - [Running the Project](#running-the-project)
-  - [Web App UI](#web-app-ui)
-    - [Homepage](#homepage)
-    - [Translation Page](#translation-page)
-  - [Running Unit Tests](#running-unit-tests)
-  - [Generate The Coverage Rport](#generate-the-coverage-rport)
-    - [Coverage Report](#coverage-report)
-  - [Models OOP Design](#models-oop-design)
-  - [Singlton Design Pattern](#singlton-design-pattern)
-  - [Controllers Actions](#controllers-actions)
-  - [Features in Program.cs](#features-in-programcs)
-  - [Contact](#contact)
 
 # SimpleTranslator
 Yet Another Simple Translator
 
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Required Packages and Tools](#required-packages-and-tools)
+  - [Running the Project](#running-the-project)
+- [Web App UI](#web-app-ui)
+  - [Homepage](#homepage)
+  - [Translation Page](#translation-page)
+- [Unit Tests and Coverage](#unit-tests-and-coverage)
+  - [Running Unit Tests](#running-unit-tests)
+  - [Generate The Coverage Rport](#generate-the-coverage-rport)
+  - [Coverage Report](#coverage-report)
+- [Models OOP Design](#models-oop-design)
+- [Singlton Design Pattern](#singlton-design-pattern)
+- [Controllers Actions](#controllers-actions)
+- [Features in Program.cs](#features-in-programcs)
+- [Contact](#contact)
+
 ## Overview
 SimpleTranslator is a .NET application designed to provide translation services. This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
+
 
 ## Getting Started
 
@@ -66,7 +68,10 @@ The app has a simple 2-pages UI - Home page and Translate page
 ### Translation Page
 ![Translation Page - UI](https://github.com/user-attachments/assets/cfb494b0-fd64-4452-a398-136362b7fb15)
 
-## Running Unit Tests
+## Unit Tests and Coverage
+The project includes several unit tests. I wrote the musing xUnit framwork. It also has a testing coverage report included. The following show how to run the unit tests and generate the coverage report.
+
+### Running Unit Tests
 1. Navigate to the test project directory:
     ```sh
     cd SimpleTranslator.Tests
@@ -81,8 +86,7 @@ The app has a simple 2-pages UI - Home page and Translate page
     ```
 ![alt text](https://github.com/user-attachments/assets/b717f249-0a34-4676-9e94-4e4a803c32fe)
 
-
-## Generate The Coverage Rport
+### Generate The Coverage Rport
 1. Make sure to run the test with coverage data collection option enabled as in step 3 of the previous section
 2. Install the coverage generation tools:
     ```sh

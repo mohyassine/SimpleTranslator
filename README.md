@@ -1,0 +1,4 @@
+- Run Applcation
+- Run Unit Tests
+- Check coverage report
+- OOP Concepts and designs

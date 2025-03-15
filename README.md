@@ -1,4 +1,5 @@
-# Yet Another Simple Translator
+# SimpleTranslator
+Yet Another Simple Translator
 
 ## Overview
 SimpleTranslator is a .NET application designed to provide translation services. This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.

@@ -2,6 +2,7 @@
 # SimpleTranslator
 Yet Another Simple Translator
 
+
 - [SimpleTranslator](#simpletranslator)
   - [Overview](#overview)
   - [Getting Started](#getting-started)
@@ -24,7 +25,7 @@ Yet Another Simple Translator
   - [Contact](#contact)
 
 ## Overview
-SimpleTranslator is a ASP.NET core MVC application designed to provide English to French translation using [Google Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/metrics?hl=en&inv=1&invt=AbruXA&project=rival-translator). This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
+SimpleTranslator is a ASP.NET core MVC application designed to provide English to French translation. The project is backed by Google Cloud AI Translation service. It uses the [basic version](https://cloud.google.com/translate/docs/basic/translating-text) of [Google Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/metrics?hl=en&inv=1&invt=AbruXA&project=rival-translator). This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
 
 ## Getting Started
 
@@ -33,10 +34,9 @@ SimpleTranslator is a ASP.NET core MVC application designed to provide English t
 - A code editor like Visual Studio or Visual Studio Code
 
 ### Required Packages and Tools
-- Google Cloud Service
-- Moq
-- xUnit
-- Coverlet
+- Google Cloud Service: ```dotnet add package Google.Cloud.Language.V1```
+- Moq: ```dotnet add {PATH_TO_SOLUTION}/SimpleTranslator/SimpleTranslator.Tests package Moq```
+- xUnit: ```dotnet new install xunit.v3.templates```
 - [ReportGeneratoor](https://github.com/danielpalme/ReportGenerator)
 
 ### Running the Project

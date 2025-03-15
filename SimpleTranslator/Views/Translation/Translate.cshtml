@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Translate from English to French";
+}
+<h2>@ViewData["Title"]</h2>
+
+@{
+    ViewBag.Title = "Form with Dropdowns and Text Areas";
+}
+
+
+@using (Html.BeginForm("Translate", "Translation", FormMethod.Post, new { onsubmit = "return validateForm();" }))
+{
+    <table>
+        <tr>
+            <th>
+                Source Language
+                <select name="source_dropdown">
+                    <option value="en">English</option>
+                </select>
+            </th>
+            <th>
+                Destination Language
+                <select name="destination_dropdown">
+                    <option value="fr">French</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <textarea name="sourceText" id="sourceText" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+            </td>
+            <td>
+                @Html.TextArea("destinationTextarea", ViewData["translatedText"]?.ToString(), new { id = "destinationTextarea", rows = 4, cols = 50, placeholder = "Translation...", value = "" })
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <input name="translation-from" type="submit" value="Submit" />
+}
+
+<script>
+    function validateForm() { 
+        var sourceText = document.getElementById("sourceText").value;
+        if (sourceText.trim() === "") {
+            alert("Source text cannot be empty.");
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission
+    }
+</script>

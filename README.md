@@ -1,3 +1,21 @@
+- [SimpleTranslator](#simpletranslator)
+  - [Overview](#overview)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Required Packages and Tools](#required-packages-and-tools)
+    - [Running the Project](#running-the-project)
+  - [Web App UI](#web-app-ui)
+    - [Homepage](#homepage)
+    - [Translation Page](#translation-page)
+  - [Running Unit Tests](#running-unit-tests)
+  - [Generate The Coverage Rport](#generate-the-coverage-rport)
+    - [Coverage Report](#coverage-report)
+  - [Models OOP Design](#models-oop-design)
+  - [Singlton Design Pattern](#singlton-design-pattern)
+  - [Controllers Actions](#controllers-actions)
+  - [Features in Program.cs](#features-in-programcs)
+  - [Contact](#contact)
+
 # SimpleTranslator
 Yet Another Simple Translator
 

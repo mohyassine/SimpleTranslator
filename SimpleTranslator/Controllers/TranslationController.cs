@@ -34,7 +34,7 @@ public class TranslationController : Controller
             // Log the exception (you can use any logging framework)
             System.Console.WriteLine($"An error occurred: {ex.Message}");
             // Return an error view or a specific error message
-            return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while translating the text.");
+            return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while translating the text.\n"+ex.Message);
         }
     }
 

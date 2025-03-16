@@ -1,5 +1,6 @@
 /Users/mohamady/Documents/Mohamad/GitHub/DotNet/SimpleTranslator/SimpleTranslator/bin/Debug/net9.0/appsettings.Development.json
 /Users/mohamady/Documents/Mohamad/GitHub/DotNet/SimpleTranslator/SimpleTranslator/bin/Debug/net9.0/appsettings.json
+/Users/mohamady/Documents/Mohamad/GitHub/DotNet/SimpleTranslator/SimpleTranslator/bin/Debug/net9.0/rival-translator-e11f22b79f4b.json
 /Users/mohamady/Documents/Mohamad/GitHub/DotNet/SimpleTranslator/SimpleTranslator/bin/Debug/net9.0/SimpleTranslator.staticwebassets.runtime.json
 /Users/mohamady/Documents/Mohamad/GitHub/DotNet/SimpleTranslator/SimpleTranslator/bin/Debug/net9.0/SimpleTranslator.staticwebassets.endpoints.json
 /Users/mohamady/Documents/Mohamad/GitHub/DotNet/SimpleTranslator/SimpleTranslator/bin/Debug/net9.0/SimpleTranslator

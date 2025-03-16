@@ -8,6 +8,7 @@ Yet Another Simple Translator
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Required Packages and Tools](#required-packages-and-tools)
+    - [Google Cloud Authentication](#google-cloud-authentication)
     - [Running the Project](#running-the-project)
   - [Web App UI](#web-app-ui)
     - [Homepage](#homepage)
@@ -25,7 +26,7 @@ Yet Another Simple Translator
   - [Contact](#contact)
 
 ## Overview
-SimpleTranslator is a ASP.NET core MVC application designed to provide English to French translation. The project is backed by Google Cloud AI Translation service. It uses the [basic version](https://cloud.google.com/translate/docs/basic/translating-text) of [Google Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/metrics?hl=en&inv=1&invt=AbruXA&project=rival-translator). This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
+SimpleTranslator is a ASP.NET core MVC (v9) application designed to provide English to French translation. The project is backed by Google Cloud AI Translation service. It uses the [basic version](https://cloud.google.com/translate/docs/basic/translating-text) of [Google Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/metrics?hl=en&inv=1&invt=AbruXA&project=rival-translator). This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
 
 ## Getting Started
 
@@ -38,6 +39,20 @@ SimpleTranslator is a ASP.NET core MVC application designed to provide English t
 - Moq: ```dotnet add {PATH_TO_SOLUTION}/SimpleTranslator/SimpleTranslator.Tests package Moq```
 - xUnit: ```dotnet new install xunit.v3.templates```
 - [ReportGeneratoor](https://github.com/danielpalme/ReportGenerator)
+
+### Google Cloud Authentication
+You need to set "the environment variable GOOGLE_APPLICATION_CREDENTIALS to the path of the JSON file that contains your credentials. This variable applies only to your current shell session, so if you open a new session, set the variable again." For dev purpose, a service account key was created from Google Cloud dahsboard and saved as a json file.
+More info [here](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment#local-key).
+
+To add Google Cloud authentication to a Docker image:
+```sh
+gcloud auth activate-service-account --key-file=MY_KEY_FILE.json
+```
+
+Then pass the path as an environment variable of the image during docker image creation:
+```sh
+docker run -d -p 5000:8080 -e GOOGLE_APPLICATION_CREDENTIALS=/PATH/TO/SERVICE/ACCOUNT/KEY/FILE/rival-translator-e11f22b79f4b.json simple-translator-image 
+```
 
 ### Running the Project
 1. Clone the repository:

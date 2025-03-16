@@ -4,6 +4,7 @@ using SimpleTranslator.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+System.Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS","./rival-translator-e11f22b79f4b.json");
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddOpenApiDocument(options =>

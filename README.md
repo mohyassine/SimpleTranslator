@@ -42,7 +42,11 @@ SimpleTranslator is a ASP.NET core MVC (v9) application designed to provide Engl
 
 ### Google Cloud Authentication
 You need to set "the environment variable GOOGLE_APPLICATION_CREDENTIALS to the path of the JSON file that contains your credentials. This variable applies only to your current shell session, so if you open a new session, set the variable again." For dev purpose, a service account key was created from Google Cloud dahsboard and saved as a json file.
-More info [here](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment#local-key).
+
+More info:
+*  [Enable Google Translation API](https://cloud.google.com/translate/docs/setup)
+*  [Authenticate to Cloud Translation](https://cloud.google.com/translate/docs/authentication)
+*  [Setup Authentication in Local Dev Environment](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment#local-key).
 
 To add Google Cloud authentication to a Docker image:
 ```sh

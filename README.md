@@ -6,6 +6,7 @@ Yet Another Simple Translator
 - [SimpleTranslator](#simpletranslator)
   - [Overview](#overview)
   - [Getting Started](#getting-started)
+    - [Run using Docker Hub](#run-using-docker-hub)
     - [Prerequisites](#prerequisites)
     - [Required Packages and Tools](#required-packages-and-tools)
     - [Google Cloud Authentication](#google-cloud-authentication)
@@ -29,6 +30,16 @@ Yet Another Simple Translator
 SimpleTranslator is a ASP.NET core MVC (v9) application designed to provide English to French translation. The project is backed by Google Cloud AI Translation service. It uses the [basic version](https://cloud.google.com/translate/docs/basic/translating-text) of [Google Cloud Translation API](https://console.cloud.google.com/apis/api/translate.googleapis.com/metrics?hl=en&inv=1&invt=AbruXA&project=rival-translator). This README provides instructions on how to run the project, execute unit tests, and explains the OOP design of the models, the actions of the controllers, and the features implemented in `Program.cs`.
 
 ## Getting Started
+
+### Run using Docker Hub
+A Docker image is available in [this public repository](https://hub.docker.com/r/may05/simple-translator-image). To run using your Docker Desktop, pull the image uinsg the following command:
+```sh
+docker pull may05/simple-translator-image:latest
+```
+Then run with the following command:
+```sh
+docker run --env=GOOGLE_APPLICATION_CREDENTIALS=/App/rival-translator-e11f22b79f4b.json -p 5000:8080 -d may05/simple-translator-image
+```
 
 ### Prerequisites
 - .NET Core installed on your machine

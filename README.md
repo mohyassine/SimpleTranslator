@@ -25,6 +25,7 @@ Yet Another Simple Translator
     - [OOP Design Pattern](#oop-design-pattern)
   - [Controllers Actions](#controllers-actions)
   - [Features in Program.cs](#features-in-programcs)
+  - [Improvements](#improvements)
   - [Contact](#contact)
 
 ## Overview
@@ -33,7 +34,7 @@ SimpleTranslator is a ASP.NET core MVC (v9) application designed to provide Engl
 ## Getting Started
 
 ### Check Web App on Azure Cloud
-An instance of the .NET Core web applciation is running on Azure Cloud:
+An instance of the .NET Core web applciation is running on Azure Cloud using Azure App Service:
 ![Azure Portal Screenshot](https://github.com/user-attachments/assets/f2480c73-3516-400f-ace4-5f635e6cf6b8)
 
 You can test it by opening the following URL: https://simple-translate.azurewebsites.net/
@@ -172,6 +173,12 @@ The `Program.cs` file configures and starts the application. Key features includ
 - Configuring middleware for request handling.
 - Add Swagger API documentation.
 - Defining the routing for the application.
+
+## Improvements
+The following are improvements to the web app that can be done, if time permits:
+* Add a factory method design pattern for the Language model
+* Add a global application settings list of destination languages. On startup, read it and fill the destination drop down in view `Translate.cshtml`. On translation request, send the ISOCode and create a destination language of the selected ISOCode sent in the request.
+* UI design improvements
 
 ## Contact
 For any questions or feedback, please contact yassine.moh@gmail.com.

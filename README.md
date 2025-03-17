@@ -36,7 +36,7 @@ SimpleTranslator is a ASP.NET core MVC (v9) application designed to provide Engl
 An instance of the .NET Core web applciation is running on Azure Cloud:
 ![Azure Portal Screenshot](https://github.com/user-attachments/assets/f2480c73-3516-400f-ace4-5f635e6cf6b8)
 
-To access it, open the following URL: https://simple-translate.azurewebsites.net/
+You can test it by opening the following URL: https://simple-translate.azurewebsites.net/
 
 ### Run using Docker Hub
 A Docker image is available in [this public repository](https://hub.docker.com/r/may05/simple-translator-image). To run using your Docker Desktop, pull the image uinsg the following command:
